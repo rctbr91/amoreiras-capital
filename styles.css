@@ -126,7 +126,6 @@ body {
     font-style: italic;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .header {
         padding: 40px 30px;
