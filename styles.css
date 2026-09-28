@@ -180,7 +180,7 @@ body {
     right: 32px;
     bottom: 24px;
     display: block;
-    width: 180px;
+    width: 120px;
     max-width: calc(100% - 40px);
     height: auto;
     border-radius: 8px;
@@ -211,7 +211,7 @@ body {
     .anbima-badge {
         position: static;
         margin: 24px auto 0;
-        width: 160px;
+        width: 110px;
     }
 }
 
