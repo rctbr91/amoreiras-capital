@@ -161,6 +161,7 @@ body {
 
 /* ============ FOOTER ============ */
 .site-footer {
+    position: relative;
     background: var(--brand-dark);
     color: rgba(255, 255, 255, 0.85);
     padding: 36px 0;
@@ -172,6 +173,18 @@ body {
     flex-direction: column;
     gap: 6px;
     align-items: center;
+}
+
+.anbima-badge {
+    position: absolute;
+    right: 32px;
+    bottom: 24px;
+    display: block;
+    width: 180px;
+    max-width: calc(100% - 40px);
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
 }
 
 .footer-brand {
@@ -194,6 +207,14 @@ body {
 }
 
 /* ============ RESPONSIVE ============ */
+@media (max-width: 900px) {
+    .anbima-badge {
+        position: static;
+        margin: 24px auto 0;
+        width: 160px;
+    }
+}
+
 @media (max-width: 720px) {
     .container {
         padding: 0 20px;
