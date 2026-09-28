@@ -76,15 +76,39 @@ body {
 
 /* ============ DOCUMENTS ============ */
 .documents {
-    padding: 8px 0 96px;
+    padding: 72px 0 96px;
 }
 
-.section-header {
-    text-align: center;
+.section-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
     margin-bottom: 48px;
 }
 
-.section-header h2 {
+.section-logo {
+    display: block;
+    width: auto;
+    max-width: 360px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.section-divider {
+    width: 1px;
+    height: 88px;
+    background: var(--brand);
+    opacity: 0.25;
+    flex-shrink: 0;
+}
+
+.section-copy {
+    max-width: 440px;
+    text-align: left;
+}
+
+.section-copy h2 {
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-size: 2.25rem;
     font-weight: 600;
@@ -245,9 +269,27 @@ body {
         max-width: 320px;
     }
     .documents {
-        padding: 8px 0 64px;
+        padding: 48px 0 64px;
     }
-    .section-header h2 {
+    .section-intro {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .section-logo {
+        max-width: 280px;
+    }
+    .section-divider {
+        width: 60px;
+        height: 1px;
+    }
+    .section-copy {
+        text-align: center;
+    }
+    .section-description {
+        margin: 0 auto;
+    }
+    .section-copy h2 {
         font-size: 1.875rem;
     }
     .documents-grid {
